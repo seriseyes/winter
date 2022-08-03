@@ -1,0 +1,8 @@
+POST http://localhost:9000/hello/post?role=true
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "se ris",
+  "password": "1234 "
+}
