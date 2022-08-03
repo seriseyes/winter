@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 /**
  * ControllerWrapper
  *
- * @author Баярхүү.Лув, 2022.08.02
+ * @author Bayarkhuu.Luv, 2022.08.02
  */
 public class ControllerWrapper {
     private final String baseUrl;

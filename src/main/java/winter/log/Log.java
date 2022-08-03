@@ -3,7 +3,7 @@ package winter.log;
 /**
  * Log
  *
- * @author Баярхүү.Лув, 2022.08.03
+ * @author Bayarkhuu.Luv, 2022.08.02
  */
 public class Log {
     public static final String ANSI_RESET = "\u001B[0m";

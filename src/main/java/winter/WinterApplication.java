@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 /**
  * Test
  *
- * @author Баярхүү.Лув, 2022.08.02
+ * @author Bayarkhuu.Luv, 2022.08.02
  */
 public class WinterApplication {
     public static Gson gson = new Gson();

@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * ControllerManager
  *
- * @author Баярхүү.Лув, 2022.08.02
+ * @author Bayarkhuu.Luv, 2022.08.02
  */
 public class ControllerManager {
     private final List<ControllerWrapper> controllers = new ArrayList<>();

@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  * GetManager
  *
- * @author Баярхүү.Лув, 2022.08.03
+ * @author Bayarkhuu.Luv, 2022.08.02
  */
 public class RequestManager {
 

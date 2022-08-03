@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 /**
  * RequestParser
  *
- * @author Баярхүү.Лув, 2022.08.02
+ * @author Bayarkhuu.Luv, 2022.08.02
  */
 public class Request {
     private final Map<RequestType, String> map;

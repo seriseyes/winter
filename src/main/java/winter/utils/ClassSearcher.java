@@ -9,7 +9,7 @@ import java.util.Set;
 /**
  * WinterClassLoader
  *
- * @author Баярхүү.Лув, 2022.08.02
+ * @author Bayarkhuu.Luv, 2022.08.02
  */
 public class ClassSearcher {
 
