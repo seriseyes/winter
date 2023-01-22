@@ -16,6 +16,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -27,7 +28,7 @@ import java.util.stream.Collectors;
  */
 public class WinterApplication {
     public static Gson gson = new Gson();
-    static int port = 9000;
+    static int port = 9001;
 
     /**
      * extend only
@@ -43,7 +44,9 @@ public class WinterApplication {
         Set<Class> classes = classSearcher.findAllClassesUsingClassLoader("").stream().filter(Objects::nonNull).collect(Collectors.toSet());
 
         Log.println("Started searching for controllers...", LogType.INFO);
-        ControllerManager controllerManager = new ControllerManager(classes.stream().filter(e -> e.isAnnotationPresent(Controller.class)).collect(Collectors.toList()));
+        List controllers = classes.stream().filter(e -> e.isAnnotationPresent(Controller.class)).collect(Collectors.toList());
+        ControllerManager controllerManager = new ControllerManager(controllers);
+        Log.println(controllers.size() + " controllers found", LogType.INFO);
 
         Log.println("Application Started on port " + port, LogType.INFO);
 
